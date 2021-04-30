@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        input {
+	font: 14px 'Open Sans', sans-serif;
+    border: 2px solid #ccc;
+    padding: 6px;
+    display: block;
+	margin-bottom: 10px;
+    width: 96%;
+}
+button {
+    font: 14px 'Open Sans', sans-serif;
+    background-color: #4285f4;
+    color: white;
+    padding: 6px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+	text-transform: uppercase;
+}
+
+
+
+        </style>
+        <title>Registrazione</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <form method="post" action="/php/register.php">
+            <h1>Registrazione</h1>
+            <input type="text" id="username" placeholder="Username" name="username" maxlength="50" required>
+            <input type="password" id="password" placeholder="Password" name="password" required>
+            <button type="submit" name="register">Registrati</button>
+        </form>
+    </body>
+</html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <form method="post" action="/php/login.php">
+            <h1>Login</h1>
+            <input type="text" id="username" placeholder="Username" name="username">
+            <input type="password" id="password" placeholder="Password" name="password">
+            <button type="submit" name="login">Accedi</button>
+        </form>
+    </body>
+</html>
