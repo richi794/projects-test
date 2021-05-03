@@ -6,7 +6,7 @@ function App() {
      <Navbar />
     
      <div className='container'>
-     <h1>cosa desideri ordinare2?</h1>
+     <h1>cosa desideri ordinare22?</h1>
     
      <div className='row'>
      </div>
