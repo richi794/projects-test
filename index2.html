@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="no-js" lang="it">
+  <head>
+    <meta charset="utf-8">
+    <title>Lamborghini</title>
+    <meta name="description" content="Lamborghini landing">
+    <link rel="icon" href="favicon16x16.ico" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script>
+      var options = {
+          clientId: "lamborghini",
+          xcontentId: "2c51cc44-b887-454f-bbe8-050f04389326",
+          //sessId: "{{userToken}}",
+          embedCodeId: "b00982939fbd4c4295c610f693c85521"
+      };
+    </script>
+  </head>
+  <body data-resize data-scroll>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <div class="container-canvas">
+      <header>
+        <nav class="navbar navbar-light bg-dark">
+          <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1"><a href="https://www.lamborghini.com/it-en"><img class="logo" src="img/loghi/logo-lamborghini.png"></a></span>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <section class="home-page">
+                <div class="grid-container text-center">
+                  <div class="grid-x grid-margin-x">
+                    <div class="cell small-12 medium-10 medium-offset-1">
+                      <div class="container my-5 text-center" style="max-width:700px ;">
+                        <h3 style="color:white;">Benvenuti sulla piattaforma</h3>
+                       <h1 style="color: yellow;">LAMBO-CONNECT</h1>
+                       <p style="color: white;">L’accesso è riservato ai dipendenti di Automobili Lamborghini. Per effettuare il log-in è necessario inserire il proprio 
+                         <b>codice fiscale</b> e il <b>codice di 5 cifre (CID)</b> che trovate sulla parte anteriore del vostro badge.</p>
+                         <p style="color: white;">In caso di problemi con l’accesso vi chiediamo di scrivere una mail a:</p>
+                         <a style="color: yellow;" href ="mailto:comunicazione.interna@lamborghini.com ">comunicazione.interna@lamborghini.com</a>
+                       
+                      </div>
+                        </div>
+                      </div>
+                      <form class="form" id="videoLamboForm" action="https://life.lamborghini.com/lgn_lc/connect/verifyAccess.php" method="POST">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" style="border:none ;"  class="form-label"></label>
+                          <input class="fiscal-code"  style="background-color: transparent; border:none  ; border-color:transparent ; width: 250px; ;"type="text" maxlength="16" autocomplete="off" placeholder="Inserisci qui il tuo codice fiscale" name="cf" required="">
+                          
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1 "  style="border:none ;" class="form-label"></label>
+                          <input class="only-digits cid" style="background-color: transparent; border:none ; width:fit-content ; width:250px ;" type="text" maxlength="5" autocomplete="off" placeholder="Inserisci qui il tuo codice CID" name="cid" required="">
+                        </div>
+                              <button class="btn-lambo btn-lambo-enter" type="submit">Accedi</button>
+                              <button class="btn-lambo btn-lambo-again js-btn-again">Riprova</button></span></div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="swiper-slide">
+              <section class="response-page">
+                <div class="bg-triangle"></div>
+                <div class="grid-container p-relative">
+                  <div class="grid-x grid-margin-x">
+                    <div class="cell small-12 medium-10 medium-offset-1">
+                      <h2>Lambo-Connect</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-container p-relative">
+                  <div class="grid-x grid-margin-x">
+                    <div class="container-fluid">
+                      <div class="videoLamboPlaceholder"><img src="img/svg/logo.svg" alt="Scudetto"></div>
+                      <div class="videoLambo hide" id="videoLambo"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid" style="max-width:900px ;">
+                  <p>Il nostro CEO Stefano Domenicali, insieme ai membri del Board Lamborghini, fa un bilancio di quanto accaduto nelle scorse settimane in relazione all’emergenza COVID-19 e alle conseguenti misure poste in essere dalla nostra Azienda; la sua riflessione si chiude con uno sguardo ai mesi che verranno e alle sfide che affronteremo insieme.</p>
+                </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+    
+  </body>
+</html>
