@@ -1,0 +1,78 @@
+
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+header {
+      width: 100%;
+      position: fixed; /*An element with position: fixed; is positioned relative to the viewport, which means it always stays 
+      in the same place even if the page is scrolled. The top, right, bottom, 
+      and left properties are used to position the element.*/
+      
+      z-index: 10;/* La proprietà z-index specifica l'ordine di stack di un elemento.
+      
+      Un elemento con un ordine di pila maggiore è sempre davanti a un elemento con un ordine di pila inferiore.
+      
+      Nota: z-index funziona solo su elementi posizionati (posizione: assoluta, posizione: relativa, posizione: fissa o posizione: appiccicosa) e elementi flessibili (elementi che sono figli diretti di display: elementi flessibili).*/
+      
+      
+      width: 100%;
+}                                                 /*capire il problema del padding nella navbar*/
+header nav {
+    background-color: #181818;
+    display: flex; /*Set the direction of some flexible items inside a <div> element in reverse order:*/
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    max-height: 3000px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    
+    height: 60px;
+    padding: 16px 20px;
+    
+}
+header nav .logo {
+    margin-right:30px ;
+    height: auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; 
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px ;
+}
+
+a img {
+    border: 0;
+}
+
+.home-page {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;   
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-image: url(img/foto/bg-lamborghini.jpg);
+    background-repeat: no-repeat; /*The background-repeat property sets if/how a background image will be repeated.
+By default, a background-image is repeated both vertically and horizontally.*/
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden; /*La proprietà overflow-x specifica se ritagliare il contenuto, aggiungere una barra di scorrimento o visualizzare il contenuto di overflow di un elemento a livello di blocco, quando eccede ai bordi sinistro e destro.*/
+    overflow-y: auto;
+}
+@media (min-width: 1024px) {    
+    header nav {
+        height: 90px;
+        padding: 16px 20px
+    }
+    header nav .logo {
+        width: 60px;
+    }
+
+
+}
